@@ -44,9 +44,9 @@ def lists():
     #   third row is [12, 17, 38]
     c = [[1, 4, 5],[6, 10, 11],[12, 17, 38]]
     # Collect the items in the last column of matrix A using list comprehension
-
+    d = [c[2] for c in c]
     # Collect only the even items of the diagonal of matrix A using list comprehension
-
+    o = [c[i][i] for i in range(3) if c[i][i] % 2 ==0]
     # We can convert a single character to its underlying integer code (e.g., its ASCII byte value)
     # by passing it to the built-in ord function. Generate a list of these integers to represent
     # each character of the string "Stevens" using list comprehension.
